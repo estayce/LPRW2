@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.maincopia')
 
 @section('content')
 <h1>teste</h1>
