@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-<h1>teste</h1>
+@foreach($welcome as $welcome)
+    <p>{{ $welcome->nome }} -- {{ $welcome->teste }}<p>
+@endforeach
 @endsection
