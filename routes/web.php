@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Use App\Http\Controllers\WelcomeController;
+Use App\Http\Controllers\TesteController;
 
-Route::get('/', [WelcomeController::class, 'index'] );
+Route::get('/teste', [TesteController::class, 'index'] );
