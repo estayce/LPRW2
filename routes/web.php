@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Use App\Http\Controllers\TesteController;
 
-Route::get('/teste', [TesteController::class, 'index'] );
+Route::get('/', [TesteController::class, 'index'] );
 
 Route::middleware([
     'auth:sanctum',
