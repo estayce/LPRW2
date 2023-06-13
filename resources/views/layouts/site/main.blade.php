@@ -67,13 +67,15 @@
 															<i class="ti ti-user fs-6"></i>
 															<p class="mb-0 fs-3">Dashboard</p>
 														</a>
-														<form method="POST" action="/">
-															<a href="/" class="nav-link" onclick="event.preventDefault();
+														<form method="POST" action="/logout">
+															@csrf
+															<a href="/logout" 
+															class="btn btn-outline-primary mx-3 mt-2 d-block" 
+															onclick="event.preventDefault();
 															this.closest('form').submit();">
-																Sair
+																Logout
 															</a>
 														</form>
-														<a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
 														@endauth
 														@guest
 														<a href="/login" class="d-flex align-items-center gap-2 dropdown-item">
