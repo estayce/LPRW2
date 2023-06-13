@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/blog.css">
 	<link rel="stylesheet" type="text/css" href="styles/blog_responsive.css">
 	<link rel="shortcut icon" type="image/png" href="/assets/images/logos/favicon.png" />
+	<link rel="stylesheet" href="/assets/css/styles.min.css" />
 </head>
 
 <body>
@@ -27,7 +28,6 @@
 		<header class="header">
 
 			<!-- Top Bar -->
-
 			<!-- Header Content -->
 			<div class="header_container">
 				<div class="container">
@@ -69,9 +69,7 @@
 														</a>
 														<form method="POST" action="/logout">
 															@csrf
-															<a href="/logout" 
-															class="btn btn-outline-primary mx-3 mt-2 d-block" 
-															onclick="event.preventDefault();
+															<a href="/logout" class="btn btn-outline-primary mx-3 mt-2 d-block" onclick="event.preventDefault();
 															this.closest('form').submit();">
 																Logout
 															</a>

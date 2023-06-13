@@ -5,6 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>@yield('title')</title>
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+  <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+  <link href="plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="styles/blog.css">
+  <link rel="stylesheet" type="text/css" href="styles/blog_responsive.css">
   <link rel="shortcut icon" type="image/png" href="/assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="/assets/css/styles.min.css" />
 </head>
@@ -17,9 +25,10 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <div class="nav-small-cap">
-            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-            <span class="hide-menu">Biblioteca</span>
+          <div class="logo_container mr-auto">
+            <a href="#">
+              <div class="logo_text">Biblioteca</div>
+            </a>
           </div>
           <!--<a href="/" class="text-nowrap logo-img">
             <img src="/assets/images/logos/dark-logo.svg" width="180" alt="" />
@@ -33,94 +42,21 @@
           <ul id="sidebarnav">
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">Home</span>
+              <span class="hide-menu">Menu</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/" aria-expanded="false">
-                <span>
-                  <i class="ti ti-layout-dashboard"></i>
-                </span>
-                <span class="hide-menu">Dashboard</span>
+              <a class="sidebar-link" href="/ui-buttons.html" aria-expanded="false">
+                <span class="hide-menu">Perfil</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-article"></i>
-                </span>
-                <span class="hide-menu">Buttons</span>
+                <span class="hide-menu">Empréstimos</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-alert-circle"></i>
-                </span>
-                <span class="hide-menu">Alerts</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-cards"></i>
-                </span>
-                <span class="hide-menu">Card</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-file-description"></i>
-                </span>
-                <span class="hide-menu">Forms</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-typography"></i>
-                </span>
-                <span class="hide-menu">Typography</span>
-              </a>
-            </li>
-            <li class="nav-small-cap">
-              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">AUTH</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-login"></i>
-                </span>
-                <span class="hide-menu">Login</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-user-plus"></i>
-                </span>
-                <span class="hide-menu">Register</span>
-              </a>
-            </li>
-            <li class="nav-small-cap">
-              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">EXTRA</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-mood-happy"></i>
-                </span>
-                <span class="hide-menu">Icons</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-aperture"></i>
-                </span>
-                <span class="hide-menu">Sample Page</span>
+                <span class="hide-menu">Catálogo</span>
               </a>
             </li>
           </ul>
@@ -155,9 +91,8 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
-                    <a href="/dashboard" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-user fs-6"></i>
-                      <p class="mb-0 fs-3">Dashboard</p>
+                    <a href="/" class="d-flex align-items-center gap-2 dropdown-item">
+                      <p class="mb-0 fs-3">Home</p>
                     </a>
                     <form method="POST" action="/logout">
                       @csrf
@@ -183,6 +118,13 @@
       </div>
     </div>
   </div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="styles/bootstrap4/popper.js"></script>
+  <script src="styles/bootstrap4/bootstrap.min.js"></script>
+  <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+  <script src="plugins/easing/easing.js"></script>
+  <script src="plugins/parallax-js-master/parallax.min.js"></script>
+  <script src="js/blog.js"></script>
   <script src="/assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/js/sidebarmenu.js"></script>
