@@ -41,11 +41,10 @@
 								</div>
 								<nav class="main_nav_contaner">
 									<ul class="main_nav">
-										<li><a href="index.html">Produtos</a></li>
-										<li><a href="courses.html">Quem somos</a></li>
-										<li><a href="instructors.html">Cliente</a></li>
-										<li><a href="index.html">Comentários de usuários</a></li>
-										<li><a href="contact.html">Contato</a></li>
+										<li><a href="/livros">Catalogo de Livros</a></li>
+										<li><a href="/quemsomos">Quem somos</a></li>
+										<li><a href="/regrasdeuso">Regras de Uso</a></li>
+										<li><a href="/contato">Contato</a></li>
 									</ul>
 								</nav>
 								<div class="header_content_right ml-auto text-right">
@@ -63,7 +62,7 @@
 												<div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
 													<div class="message-body">
 														@auth
-														<a href="/dashboard" class="d-flex align-items-center gap-2 dropdown-item">
+														<a href="/emprestimos" class="d-flex align-items-center gap-2 dropdown-item">
 															<i class="ti ti-user fs-6"></i>
 															<p class="mb-0 fs-3">Dashboard</p>
 														</a>

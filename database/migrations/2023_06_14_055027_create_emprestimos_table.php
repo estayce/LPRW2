@@ -12,10 +12,8 @@ class CreateEmprestimosTable extends Migration
             $table->id();
             $table->unsignedBigInteger('livro_id');
             $table->unsignedBigInteger('user_id');
-            $table->date('data_retirada');
-            $table->date('data_devolucao')->nullable();
-            $table->foreign('livro_id')->references('id')->on('livros')->onDelete('cascade');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->timestamp('data_retirada')->nullable();
+            $table->timestamp('data_devolucao')->nullable();
             $table->timestamps();
         });
     }

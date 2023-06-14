@@ -31,11 +31,6 @@
                 <td>{{ $emprestimo->livro->colecao }}</td>
                 <td>{{ $emprestimo->livro->tombo }}</td>
                 <td>{{ $emprestimo->data_retirada }}</td>
-                @if($emprestimo->devolvido)
-                Devolvido em {{ $emprestimo->data_devolucao }}
-                @else
-                Pendente
-                @endif
                 </td>
                 <td>
                     <a href="{{ route('emprestimos.show', $emprestimo->id) }}" class="btn btn-primary">Detalhes</a>

@@ -8,14 +8,18 @@
         <p>Livro: {{ $emprestimo->livro->titulo }}</p>
         <p>Data de Retirada: {{ $emprestimo->data_retirada }}</p>
         <p>Data de Devolução: {{ $emprestimo->data_devolucao }}</p>
-        <p>Data de Devolução Real: {{ $emprestimo->data_devolucao}}</p>
-
+        
         @if ($emprestimo->devolvido)
             <p>Status: Devolvido</p>
         @else
-            <p>Status: Pendente</p>
+            @if ($emprestimo->livro->alugado && !$emprestimo->livro->disponivel)
+                <p>Status: Devolvido</p>
+            @else
+                <p>Status: Pendente</p>
+            @endif
         @endif
     </div>
 
     <a href="{{ route('emprestimos.index') }}">Voltar</a>
 @endsection
+

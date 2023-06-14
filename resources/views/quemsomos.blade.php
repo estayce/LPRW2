@@ -11,7 +11,7 @@
                     <div class="blog_post_title_container">
                         <div class="blog_category"><a href="#"></a></div>
                         
-                        <div class= "blog_title"><h1>Quem somos</h1></div>
+                        <div class= "blog_title"><h1>Quem somos</h1></br></br></div>
                     </div>
                     <div class="blog_text">
                         <p>A Biblioteca Saber é um espaço dedicado ao conhecimento e à aprendizagem, situado em um ambiente acolhedor e inspirador. Nós nos orgulhamos de ser uma instituição comprometida em promover a disseminação do saber e o acesso à informação.

@@ -29,20 +29,18 @@ class EmprestimoController extends Controller
     {
         $request->validate([
             'livro_id' => 'required',
-            'data_retirada' => 'required',
         ]);
+
+        $user = Auth::user();
+        $livro = Livro::findOrFail($request->input('livro_id'));
 
         $emprestimo = Emprestimo::create([
-            'livro_id' => $request->input('livro_id'),
-            'user_id' => Auth::id(),
-            'data_retirada' => $request->input('data_retirada'),
+            'user_id' => $user->id,
+            'livro_id' => $livro->id,
+            'data_retirada' => now(), // Preenche automaticamente a data de retirada com o momento atual
         ]);
 
-        $livro = Livro::findOrFail($request->input('livro_id'));
-        $livro->alugado = true;
-        $livro->save();
-
-        return redirect()->route('emprestimos.show', $emprestimo->id)->with('success', 'Empréstimo criado com sucesso!');
+        return redirect()->route('emprestimos.index')->with('success', 'Empréstimo realizado com sucesso!');
     }
 
     public function show($id)

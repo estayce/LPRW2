@@ -1,7 +1,7 @@
 @extends('layouts.admin.main')
 
 @section('content')
-    <h1>Locação de Livro</h1>
+    <h1>Reservar livros</h1>
 
     <form method="POST" action="{{ route('emprestimos.store') }}">
         @csrf
@@ -15,16 +15,9 @@
             </select>
         </div>
 
-        <div>
-            <label for="data_retirada">Data de Retirada:</label>
-            <input type="date" name="data_retirada" id="data_retirada" required>
-        </div>
-
-        <div>
-            <label for="data_devolucao">Data de Devolução:</label>
-            <input type="date" name="data_devolucao" id="data_devolucao" required>
-        </div>
+        <input type="hidden" name="alugado" value="1">
 
         <button type="submit">Confirmar Locação</button>
     </form>
 @endsection
+

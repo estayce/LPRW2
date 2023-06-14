@@ -24,4 +24,5 @@ class Livro extends Model
     {
         return $this->hasMany(Emprestimo::class);
     }
+    
 }

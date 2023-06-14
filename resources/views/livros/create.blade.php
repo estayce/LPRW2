@@ -1,6 +1,7 @@
 @extends('layouts.admin.main')
 
 @section('content')
+<div class="container">
     <h1>Cadastrar Livro</h1>
 
     <form method="POST" action="{{ route('livros.store') }}">
@@ -36,11 +37,7 @@
             <input type="text" name="tombo" id="tombo" required>
         </div>
 
-        <div>
-            <label for="alugado">Alugado:</label>
-            <input type="checkbox" name="alugado" id="alugado">
-        </div>
-
         <button type="submit">Cadastrar</button>
     </form>
+</div>
 @endsection

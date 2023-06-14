@@ -55,7 +55,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+              <a class="sidebar-link" href="/livros" aria-expanded="false">
                 <span class="hide-menu">Catálogo</span>
               </a>
             </li>

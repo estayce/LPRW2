@@ -6,17 +6,10 @@ use App\Http\Controllers\TesteController;
 use App\Http\Controllers\LivroController;
 use App\Http\Controllers\EmprestimoController;
 
-Route::get('/', [TesteController::class, 'index']);
-
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+Route::get('/', [LivroController::class, 'index']);
+Route::get('/quemsomos', [TesteController::class, 'quemsomos']);
+Route::get('/regrasdeuso', [TesteController::class, 'regrasdeuso']);
+Route::get('/contato', [TesteController::class, 'contato']);
 
 Route::get('/livros', [LivroController::class, 'index'])->name('livros.index');
 Route::get('/livros/create', [LivroController::class, 'create'])->name('livros.create');
@@ -25,7 +18,8 @@ Route::get('/livros/{livro}', [LivroController::class, 'show'])->name('livros.sh
 Route::get('/livros/{livro}/edit', [LivroController::class, 'edit'])->name('livros.edit');
 Route::put('/livros/{livro}', [LivroController::class, 'update'])->name('livros.update');
 Route::delete('/livros/{emprestimo}', [LivroController::class, 'destroy'])->name('livros.destroy');
-Route::get('/livros/disponiveis', [LivroController::class, 'livrosDisponiveis'])->name('livros.disponiveis');
+Route::put('/livros/{livro}/alterar-disponibilidade', [LivroController::class, 'alterarDisponibilidade'])->name('livros.alterarDisponibilidade');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/emprestimos', [EmprestimoController::class, 'index'])->name('emprestimos.index');

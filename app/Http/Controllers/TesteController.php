@@ -12,4 +12,13 @@ class TesteController extends Controller
         $exemplo = Teste::all();
         return view('pastateste.paginateste', ['teste' => $exemplo]);
     }
+    public function quemsomos(){
+        return view('quemsomos');
+    }
+    public function regrasdeuso(){
+        return view('regrasdeuso');
+    }
+    public function contato(){
+        return view('contato');
+    }
 }
