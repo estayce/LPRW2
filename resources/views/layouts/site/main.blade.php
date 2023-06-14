@@ -36,7 +36,7 @@
 							<div class="header_content d-flex flex-row align-items-center justify-content-start">
 								<div class="logo_container mr-auto">
 									<a href="#">
-										<div class="logo_text">Biblioteca</div>
+										<div class="logo_text">Biblioteca Saber</div>
 									</a>
 								</div>
 								<nav class="main_nav_contaner">
@@ -127,9 +127,9 @@
 				</ul>
 			</nav>
 			<div class="menu_extra">
-				<div class="menu_phone"><span class="menu_title">phone:</span>+44 300 303 0266</div>
+				<div class="menu_phone"><span class="menu_title">Telefone:</span>14 4002-8922</div>
 				<div class="menu_social">
-					<span class="menu_title">follow us</span>
+					<span class="menu_title">Siga-nos</span>
 					<ul>
 						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
@@ -162,16 +162,12 @@
 						<!-- Newsletter -->
 						<div class="col-lg-3 footer_col">
 							<div class="newsletter_container d-flex flex-column align-items-start justify-content-end">
-								<div class="footer_logo mb-auto"><a href="#">Lingua</a></div>
-								<div class="footer_title">Subscribe</div>
-								<form action="#" id="newsletter_form" class="newsletter_form">
-									<input type="email" class="newsletter_input" placeholder="Email" required="required">
-									<button class="newsletter_button"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-								</form>
+								<div class="footer_logo mb-auto"><a href="#">Biblioteca Saber</a></div>
+								
 							</div>
 						</div>
 
-						<!-- About -->
+						<!-- About 
 						<div class="col-lg-2 offset-lg-3 footer_col">
 							<div>
 								<div class="footer_title">About Us</div>
@@ -185,9 +181,9 @@
 									<li><a href="#">Contact us</a></li>
 								</ul>
 							</div>
-						</div>
+						</div> -->
 
-						<!-- Help & Support -->
+						<!-- Help & Support 
 						<div class="col-lg-2 footer_col">
 							<div class="footer_title">Help & Support</div>
 							<ul class="footer_list">
@@ -199,8 +195,8 @@
 								<li><a href="#">Status</a></li>
 							</ul>
 						</div>
-
-						<!-- Privacy -->
+                              -->
+						<!-- Privacy 
 						<div class="col-lg-2 footer_col clearfix">
 							<div>
 								<div class="footer_title">Privacy & Terms</div>
@@ -212,7 +208,7 @@
 								</ul>
 							</div>
 						</div>
-
+                        -->
 					</div>
 				</div>
 			</div>
@@ -222,14 +218,14 @@
 						<div class="col">
 							<div class="copyright_content d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-start">
 								<div class="cr"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-									Copyright &copy;<script>
+									 &copy;<script>
 										document.write(new Date().getFullYear());
-									</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+									</script> Todos os direitos reservados a Biblioteca Saber</a> 
 									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 								<div class="cr_right ml-md-auto">
-									<div class="footer_phone"><span class="cr_title">phone:</span>+44 300 303 0266</div>
+									<div class="footer_phone"><span class="cr_title">Telefone:</span>14 4002-8922</div>
 									<div class="footer_social">
-										<span class="cr_social_title">follow us</span>
+			
 										<ul>
 											<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 											<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
