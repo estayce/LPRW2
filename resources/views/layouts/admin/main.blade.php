@@ -45,11 +45,6 @@
               <span class="hide-menu">Menu</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/ui-buttons.html" aria-expanded="false">
-                <span class="hide-menu">Perfil</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
               <a class="sidebar-link" href="/emprestimos" aria-expanded="false">
                 <span class="hide-menu">Empréstimos</span>
               </a>

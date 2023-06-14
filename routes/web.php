@@ -10,6 +10,7 @@ Route::get('/', [LivroController::class, 'index']);
 Route::get('/quemsomos', [TesteController::class, 'quemsomos']);
 Route::get('/regrasdeuso', [TesteController::class, 'regrasdeuso']);
 Route::get('/contato', [TesteController::class, 'contato']);
+Route::get('/dashboard', [TesteController::class, 'dashboard']);
 
 Route::get('/livros', [LivroController::class, 'index'])->name('livros.index');
 Route::get('/livros/create', [LivroController::class, 'create'])->name('livros.create');

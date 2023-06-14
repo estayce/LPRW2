@@ -21,4 +21,7 @@ class TesteController extends Controller
     public function contato(){
         return view('contato');
     }
+    public function dashboard(){
+        return view('dashboard');
+    }
 }
